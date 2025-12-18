@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Girl Gang Gym – sală de sport pentru femei, training într-un spațiu sigur și prietenos.">
+    <title>Girl Gang Gym</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 56px;
+        }
+
+        :root {
+            --pink: #ff4fa3;
+            --purple: #b35cff;
+            --dark-purple: #6a1b9a;
+            --yellow: #ffd54f;
+            --red: #ff5252;
+            --bg-dark: #1a1a1a;
+        }
+
+        .custom-nav {
+            background: var(--dark-purple);
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: var(--dark-purple);
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--purple);
+            font-weight: 600;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .custom-card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform .3s;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bg-pink {
+            background: var(--pink) !important;
+        }
+
+        .bg-purple {
+            background: var(--purple) !important;
+        }
+
+        .bg-yellow {
+            background: var(--yellow) !important;
+            color: #000 !important;
+        }
+
+        .bg-red {
+            background: var(--red) !important;
+        }
+
+
+        .testimonial-box {
+            background: #f9f2ff;
+            border-left: 5px solid var(--purple);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            background: rgb(187, 99, 231);
+        }
+
+        .social-link {
+            color: var(--yellow);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .footer {
+            background: #000;
+        }
+        .col-md-6 {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        }
+        .row-align-items-center {
+        gap: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        }
+
+        .p-ex-h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 3px;
+        }   
+        .pexsub {
+        margin: 0;
+        }
+
+
+
+
+        h1 {
+            color: rgb(160, 63, 80); text-transform: capitalize;
+        }
+        #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        }
+        .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+         width: 100%;
+        max-width: 1320px;
+padding: 0 12px;
+        }
+        .textfooter-copyright {
+        margin-top: 40px;
+         display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+        width: 100%;
+        max-width: 1320px;
+padding: 0 12px;
+        }
+        .contact-section {
+        background-color: #6a1b9a;
+        }
+        #contactfooter {
+        color: #ffffff;
+        margin: 0 0 20px 0 !important;
+        }
+@media (max-width: 991px) {
+
+.row {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.col-md-3 {
+width: 100%;
+}
+.col-md-4 {
+width: 100%;
+margin-bottom: 8px;
+}
+.row-align-items-center {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.col-md-6 {
+width: 100%;
+}
+
+}
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Girl Gang Gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#despre">Despre noi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clase">Clase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoniale">Testimoniale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="active-activity.jpg" class="d-block w-100" alt="girl gang gym">
+                <div class="carousel-caption">
+                    <p class="p-ex-h2">Forță, feminitate, comunitate</p>
+                    <p class="pexsub">Un spațiu sigur creat pentru femei.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="mobility.jpg" class="d-block w-100" alt="antrenamente de grup">
+                <div class="carousel-caption">
+                    <p class="p-ex-h2">Antrenamente de grup</p>
+                    <p class="pexsub">Energie, motivație și vibe de gașcă.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="active-activity.jpg" class="d-block w-100" alt="antrenoare dedicate">
+                <div class="carousel-caption">
+                    <p class="p-ex-h2">Antrenorițe dedicate</p>
+                    <p class="pexsub">Sprijin real, explicații clare, progres constant.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="training.jpg" class="d-block w-100" alt="spațiu sigur">
+                <div class="carousel-caption">
+                    <p class="p-ex-h2">Spațiu sigur</p>
+                    <p class="pexsub">Fără presiune, fără judecată.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="cardio.jpg" class="d-block w-100" alt="comunitate">
+                <div class="carousel-caption">
+                    <p class="p-ex-h2">Alătură-te comunității</p>
+                    <p class="pexsub">Descoperă cât de bine te poți simți în corpul tău.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <section id="despre" class="container py-5">
+        <h2 class="section-title text-center mb-4">Despre Girl Gang Gym</h2>
+        <div class="row-align-items-center">
+            <div class="col-md-6">
+                <h3 class="subtitle">Ce este Girl Gang Gym?</h3>
+                <p>Girl Gang Gym este o sală de sport creată de femei pentru femei, cu un singur scop: să oferim un spațiu sigur, prietenos și motivant în care să te simți bine în corpul tău.</p>
+                <p>La noi, nu contează vârsta, forma fizică sau experiența. Contează doar să vii așa cum ești.</p>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="subtitle">Valorile noastre</h3>
+                <p>Siguranță, incluziune, progres și comunitate. Fiecare antrenament este adaptat nevoilor tale, nivelului tău de experiență și obiectivelor personale.<br><br>Punem accent pe o atmosferă prietenoasă, în care fiecare persoană se simte susținută și motivată să evolueze în ritmul propriu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="clase" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Clase & Abonamente</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card custom-card h-100">
+                        <img src="active-activity.jpg" class="card-img-top" alt="girl power strength">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl Power Strength</h5>
+                            <span class="badge bg-pink mb-2">Recomandat începătoare</span>
+                            <p>Forță – 65 lei / ședință</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card custom-card h-100">
+                        <img src="cardio.jpg" class="card-img-top" alt="cardio confidence">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardio & Confidence</h5>
+                            <span class="badge bg-purple mb-2">Ofertă nouă</span>
+                            <p>Cardio – 60 lei / ședință</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card custom-card h-100">
+                        <img src="mobility.jpg" class="card-img-top" alt="mobility mindful movement">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobility & Mindful Movement</h5>
+                            <span class="badge bg-yellow mb-2">Locuri limitate</span>
+                            <p>Mobilitate – 55 lei / ședință</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card custom-card h-100">
+                        <img src="training.jpg" class="card-img-top" alt="personal training">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Training</h5>
+                            <span class="badge bg-red mb-2">Program personalizat</span>
+                            <p>De la 150 lei / ședință</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoniale" class="container py-5">
+        <h2 class="section-title text-center mb-4">Testimoniale</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-box">
+                    <h4>Andreea, 29</h4>
+                    <p>„Prima sală în care nu m-am simțit stingheră. Am progresat enorm.”</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-box">
+                    <h4>Ioana, 34</h4>
+                    <p>„Atmosferă prietenoasă, antrenoare super profi și vibe de gașcă.”</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-box">
+                    <h4>Mara, 22</h4>
+                    <p>„Mă simt în siguranță și motivată. Recomand cu drag.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="contact-section text-light py-5">
+        <div class="container1">
+            <h2 id="contactfooter" class="section-title text-center mb-4">Contact</h2>
+
+            <p class="text-center">Strada Energiei 12, Cluj-Napoca</p>
+            <p class="text-center">Telefon: 0700 000 000 · Email: hello@girlganggym.ro</p>
+
+            <div class="text-center mt-3">
+                <a href="https://www.facebook.com/" class="social-link me-3">Facebook</a>
+                <a href="https://www.instagram.com/" class="social-link me-3">Instagram</a>
+                <a href="https://www.tiktok.com/" class="social-link">TikTok</a>
+            </div>
+        </div>
+        <div class="textfooter-copyright">© 2025 Girl Gang Gym</div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+</html>
